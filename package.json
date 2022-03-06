@@ -1,0 +1,52 @@
+{
+    "private": true,
+    "name": "hct-pallet",
+    "version": "0.0.1",
+    "engines": {
+        "node": ">= 10"
+    },
+    "scripts": {
+        "dev": "run-p dev:*",
+        "dev:host": "parcel watch --no-hmr --public-url ./ -d ./dist/host src/host/hostscript.ts",
+        "dev:client": "parcel watch --hmr-hostname=localhost --public-url ./ -d ./dist/client src/client/index.html",
+        "sym": "ln -sf $(pwd) ~/Library/Application\\ Support/Adobe/CEP/extensions/hct-pallet"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.17.5",
+        "@babel/preset-env": "^7.16.11",
+        "@babel/preset-react": "^7.16.7",
+        "@babel/preset-typescript": "^7.16.7",
+        "@types/domready": "^1.0.0",
+        "@types/node": "^14.14.31",
+        "@types/react": "^17.0.2",
+        "@types/react-dom": "^17.0.1",
+        "@types/styled-components": "^5.1.24",
+        "babel-plugin-styled-components": "^2.0.6",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-typescript": "^7.0.0-alpha.19",
+        "npm-run-all": "^4.1.5",
+        "parcel-bundler": "1.12.3",
+        "types-for-adobe": "github:pravdomil/types-for-adobe",
+        "typescript": "4.2.2"
+    },
+    "dependencies": {
+        "@babel/polyfill": "^7.12.1",
+        "@fleur/lys": "3.0.0-beta.2",
+        "@material/material-color-utilities": "^0.1.1",
+        "copy-to-clipboard": "^3.3.1",
+        "core-js": "^3.9.1",
+        "domready": "^1.0.8",
+        "es6-string-polyfills": "^1.0.0",
+        "extendscript-es5-shim-ts": "^0.0.1",
+        "json5": "^2.2.0",
+        "polished": "^4.1.4",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "react-virtualized-auto-sizer": "^1.0.4",
+        "react-window": "^1.8.6",
+        "styled-components": "^5.3.3",
+        "superjson": "^1.8.1",
+        "v8": "^0.1.0"
+    }
+}

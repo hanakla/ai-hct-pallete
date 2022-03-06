@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES3",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "lib": ["DOM", "ES2015"],
+    "strict": false,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "allowJs": true
+  },
+  "include": ["./types.d.ts", "./main.tsx", "./themeManager.ts"]
+}
