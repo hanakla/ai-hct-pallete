@@ -4,7 +4,8 @@
     "module": "CommonJS",
     "moduleResolution": "node",
     "strict": false,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "jsxImportSource": "@emotion/react"
   },
   "include": ["./src"]
 }

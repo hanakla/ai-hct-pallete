@@ -1,4 +1,5 @@
 import { DetailedHTMLProps, ButtonHTMLAttributes } from "react";
+import clx from "classnames";
 
 interface Props {
   kind?: "normal" | "primary";
@@ -6,6 +7,7 @@ interface Props {
 
 export const Button = ({
   kind,
+  className,
   ...props
 }: Props &
   DetailedHTMLProps<
@@ -14,7 +16,14 @@ export const Button = ({
   >) => {
   return (
     <button
-      className={kind === "primary" ? "topcoat-button--cta" : "topcoat-button"}
+      css={`
+        padding: 0px 8px;
+        font-size: 12px;
+      `}
+      className={clx(
+        kind === "primary" ? "topcoat-button--cta" : "topcoat-button",
+        className
+      )}
       {...props}
     />
   );

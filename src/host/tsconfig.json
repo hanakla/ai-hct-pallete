@@ -3,7 +3,6 @@
     "target": "ES3",
     "module": "CommonJS",
     "lib": ["ES2015"],
-    "noLib": true,
     "strict": false,
     "esModuleInterop": true
   },
